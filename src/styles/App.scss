@@ -37,3 +37,12 @@ button {
     background-color: darken($color: $secondaryColor, $amount: 10%);
   }
 }
+
+button.cancel-button {
+  width: fit-content;
+  background-color: transparent;
+  border: 1px solid $secondaryColor;
+  border-radius: 5px;
+  padding: 10px 40px;
+  color: $primaryColor;
+}
