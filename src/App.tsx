@@ -1,14 +1,16 @@
 import React, { useState, useEffect } from "react";
+
+import Routes from "./routes";
 import "./styles/App.scss";
 
 import SplashScreen from "./components/SplashScreen";
 
-import Login from "./components/Login";
-import Home from "./components/Home";
+type Props = {
+  store: any
+}
 
-const App: React.FC = () => {
+const App: React.FC<Props> = (props) => {
   const [showSplash, setShowSplash] = useState(false);
-  const [logged, setLogged] = useState(true);
 
   useEffect(() => {
     setShowSplash(true);
@@ -17,11 +19,11 @@ const App: React.FC = () => {
     }, 1000);
   }, []);
 
-  return (
-    <div className="App">
-      {showSplash ? <SplashScreen /> : logged ? <Home /> : <Login />}
-    </div>
-  );
+  if (showSplash) {
+    return <SplashScreen />;
+  }
+
+  return <Routes />;
 };
 
 export default App;

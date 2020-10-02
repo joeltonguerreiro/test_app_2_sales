@@ -1,0 +1,29 @@
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+}
+
+.projectsHead {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.iconSearch {
+    width: 24px;
+    height: auto;
+}
+
+.gridProjects {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100px 100px;
+    row-gap: 10px;
+    column-gap: 10px;
+    justify-items: center;
+    align-items: center;
+}
