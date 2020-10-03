@@ -12,4 +12,12 @@ export const StyledProjectItem = styled('div')`
     background-size: cover;
     display: flex;
     align-items: flex-end;
+    position: relative;
+`
+export const StyledHeadProjectView = styled('div')`
+    width: 100%;
+    height: 20%;
+    background-image: url("${(props: BgImageProps) => props.bgImage ? props.bgImage : 'none' }");
+    background-position: center center;
+    background-size: cover;
 `

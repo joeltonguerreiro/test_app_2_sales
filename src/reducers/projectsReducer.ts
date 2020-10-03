@@ -1,5 +1,7 @@
 import { Reducer } from "redux";
 
+import data from "../data";
+
 import {
     FILTER,
 } from "../constants/actionTypes";
@@ -15,13 +17,7 @@ type iProjectsState = {
 }
 
 const initialState: iProjectsState = {
-	listProjects: [
-        {name: 'Coorporativo I', image: '../../images/image2.png'},
-        {name: 'Coorporativo II'},
-        {name: 'Coorporativo III'},
-        {name: 'Residencial I'},
-        {name: 'Residencial II'}
-    ],
+	listProjects: data,
     filteredProjects: []
 };
 

@@ -6,6 +6,7 @@ import Login from "./components/Login";
 import Home from "./components/Home";
 import Chat from "./components/Chat";
 import Settings from "./components/Settings";
+import ProjectView from "./components/Projects/view";
 
 type RouteProps = {
   exact?: boolean;
@@ -55,6 +56,12 @@ const Routes: React.FC = () => {
         <PrivateRoute
           path="/settings"
           component={Settings}
+          isAuthenticated={isAuthenticated}
+        />
+        <PrivateRoute
+        exact
+          path="/project-view/:id"
+          component={ProjectView}
           isAuthenticated={isAuthenticated}
         />
       </Switch>

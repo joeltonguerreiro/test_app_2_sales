@@ -29,8 +29,8 @@ const Search = () => {
   if (searchIsOpen) {
     return (
       <div className={styles.searchBox}>
-        <BsSearch className={styles.iconSearch} onClick={handleOpenSearch} />
-        <input type="text" placeholder="Pesquisar por projeto ou cliente" onChange={handleChange}></input>
+        <BsSearch className={styles.iconSearch} />
+        <input type="text" placeholder="Pesquisar por projeto ou cliente" onChange={handleChange} />
         <span className={styles.cancelButton} onClick={handleCloseSearch}>CANCELAR</span>
       </div>
     );
