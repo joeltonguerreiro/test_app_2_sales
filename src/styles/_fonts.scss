@@ -1,0 +1,383 @@
+@font-face {
+    font-family: 'Texta';
+    src: url('../fonts/Texta-Regular.eot');
+    src: local('Texta'), local('Texta-Regular'),
+        url('../fonts/Texta-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Texta-Regular.woff2') format('woff2'),
+        url('../fonts/Texta-Regular.woff') format('woff'),
+        url('../fonts/Texta-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta Book';
+    src: url('../fonts/Texta-Book.eot');
+    src: local('Texta Book'), local('Texta-Book'),
+        url('../fonts/Texta-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Texta-Book.woff2') format('woff2'),
+        url('../fonts/Texta-Book.woff') format('woff'),
+        url('../fonts/Texta-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('../fonts/TextaAlt-HeavyIt.eot');
+    src: local('Texta Alt Heavy It'), local('TextaAlt-HeavyIt'),
+        url('../fonts/TextaAlt-HeavyIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TextaAlt-HeavyIt.woff2') format('woff2'),
+        url('../fonts/TextaAlt-HeavyIt.woff') format('woff'),
+        url('../fonts/TextaAlt-HeavyIt.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('../fonts/TextaAlt-Medium.eot');
+    src: local('Texta Alt Medium'), local('TextaAlt-Medium'),
+        url('../fonts/TextaAlt-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TextaAlt-Medium.woff2') format('woff2'),
+        url('../fonts/TextaAlt-Medium.woff') format('woff'),
+        url('../fonts/TextaAlt-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('../fonts/Texta-BoldIt.eot');
+    src: local('Texta Bold It'), local('Texta-BoldIt'),
+        url('../fonts/Texta-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Texta-BoldIt.woff2') format('woff2'),
+        url('../fonts/Texta-BoldIt.woff') format('woff'),
+        url('../fonts/Texta-BoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('../fonts/Texta-MediumIt.eot');
+    src: local('Texta Medium It'), local('Texta-MediumIt'),
+        url('../fonts/Texta-MediumIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Texta-MediumIt.woff2') format('woff2'),
+        url('../fonts/Texta-MediumIt.woff') format('woff'),
+        url('../fonts/Texta-MediumIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('../fonts/Texta-Light.eot');
+    src: local('Texta Light'), local('Texta-Light'),
+        url('../fonts/Texta-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Texta-Light.woff2') format('woff2'),
+        url('../fonts/Texta-Light.woff') format('woff'),
+        url('../fonts/Texta-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta Book';
+    src: url('../fonts/Texta-BookIt.eot');
+    src: local('Texta Book It'), local('Texta-BookIt'),
+        url('../fonts/Texta-BookIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Texta-BookIt.woff2') format('woff2'),
+        url('../fonts/Texta-BookIt.woff') format('woff'),
+        url('../fonts/Texta-BookIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('../fonts/TextaAlt-It.eot');
+    src: local('Texta Alt It'), local('TextaAlt-It'),
+        url('../fonts/TextaAlt-It.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TextaAlt-It.woff2') format('woff2'),
+        url('../fonts/TextaAlt-It.woff') format('woff'),
+        url('../fonts/TextaAlt-It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('../fonts/TextaAlt-Heavy.eot');
+    src: local('Texta Alt Heavy'), local('TextaAlt-Heavy'),
+        url('../fonts/TextaAlt-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TextaAlt-Heavy.woff2') format('woff2'),
+        url('../fonts/TextaAlt-Heavy.woff') format('woff'),
+        url('../fonts/TextaAlt-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('../fonts/Texta-Heavy.eot');
+    src: local('Texta Heavy'), local('Texta-Heavy'),
+        url('../fonts/Texta-Heavy.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Texta-Heavy.woff2') format('woff2'),
+        url('../fonts/Texta-Heavy.woff') format('woff'),
+        url('../fonts/Texta-Heavy.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('../fonts/Texta-ThintIt.eot');
+    src: local('Texta Thin It'), local('Texta-ThintIt'),
+        url('../fonts/Texta-ThintIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Texta-ThintIt.woff2') format('woff2'),
+        url('../fonts/Texta-ThintIt.woff') format('woff'),
+        url('../fonts/Texta-ThintIt.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('../fonts/TextaAlt-Bold.eot');
+    src: local('Texta Alt Bold'), local('TextaAlt-Bold'),
+        url('../fonts/TextaAlt-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TextaAlt-Bold.woff2') format('woff2'),
+        url('../fonts/TextaAlt-Bold.woff') format('woff'),
+        url('../fonts/TextaAlt-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('../fonts/Texta-It.eot');
+    src: local('Texta It'), local('Texta-It'),
+        url('../fonts/Texta-It.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Texta-It.woff2') format('woff2'),
+        url('../fonts/Texta-It.woff') format('woff'),
+        url('../fonts/Texta-It.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('../fonts/TextaAlt-Thin.eot');
+    src: local('Texta Alt Thin'), local('TextaAlt-Thin'),
+        url('../fonts/TextaAlt-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TextaAlt-Thin.woff2') format('woff2'),
+        url('../fonts/TextaAlt-Thin.woff') format('woff'),
+        url('../fonts/TextaAlt-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('../fonts/Texta-BlackIt.eot');
+    src: local('Texta Black It'), local('Texta-BlackIt'),
+        url('../fonts/Texta-BlackIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Texta-BlackIt.woff2') format('woff2'),
+        url('../fonts/Texta-BlackIt.woff') format('woff'),
+        url('../fonts/Texta-BlackIt.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('../fonts/TextaAlt-ThintIt.eot');
+    src: local('Texta Alt Thin It'), local('TextaAlt-ThintIt'),
+        url('../fonts/TextaAlt-ThintIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TextaAlt-ThintIt.woff2') format('woff2'),
+        url('../fonts/TextaAlt-ThintIt.woff') format('woff'),
+        url('../fonts/TextaAlt-ThintIt.ttf') format('truetype');
+    font-weight: 100;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('../fonts/Texta-Bold.eot');
+    src: local('Texta Bold'), local('Texta-Bold'),
+        url('../fonts/Texta-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Texta-Bold.woff2') format('woff2'),
+        url('../fonts/Texta-Bold.woff') format('woff'),
+        url('../fonts/Texta-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('../fonts/Texta-LightIt.eot');
+    src: local('Texta Light It'), local('Texta-LightIt'),
+        url('../fonts/Texta-LightIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Texta-LightIt.woff2') format('woff2'),
+        url('../fonts/Texta-LightIt.woff') format('woff'),
+        url('../fonts/Texta-LightIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('../fonts/Texta-HeavyIt.eot');
+    src: local('Texta Heavy It'), local('Texta-HeavyIt'),
+        url('../fonts/Texta-HeavyIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Texta-HeavyIt.woff2') format('woff2'),
+        url('../fonts/Texta-HeavyIt.woff') format('woff'),
+        url('../fonts/Texta-HeavyIt.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt Book';
+    src: url('../fonts/TextaAlt-Book.eot');
+    src: local('Texta Alt Book'), local('TextaAlt-Book'),
+        url('../fonts/TextaAlt-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TextaAlt-Book.woff2') format('woff2'),
+        url('../fonts/TextaAlt-Book.woff') format('woff'),
+        url('../fonts/TextaAlt-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta Alt Book';
+    src: url('../fonts/TextaAlt-BookIt.eot');
+    src: local('Texta Alt Book It'), local('TextaAlt-BookIt'),
+        url('../fonts/TextaAlt-BookIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TextaAlt-BookIt.woff2') format('woff2'),
+        url('../fonts/TextaAlt-BookIt.woff') format('woff'),
+        url('../fonts/TextaAlt-BookIt.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('../fonts/Texta-Thin.eot');
+    src: local('Texta Thin'), local('Texta-Thin'),
+        url('../fonts/Texta-Thin.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Texta-Thin.woff2') format('woff2'),
+        url('../fonts/Texta-Thin.woff') format('woff'),
+        url('../fonts/Texta-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('../fonts/TextaAlt-LightIt.eot');
+    src: local('Texta Alt Light It'), local('TextaAlt-LightIt'),
+        url('../fonts/TextaAlt-LightIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TextaAlt-LightIt.woff2') format('woff2'),
+        url('../fonts/TextaAlt-LightIt.woff') format('woff'),
+        url('../fonts/TextaAlt-LightIt.ttf') format('truetype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('../fonts/TextaAlt-Black.eot');
+    src: local('Texta Alt Black'), local('TextaAlt-Black'),
+        url('../fonts/TextaAlt-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TextaAlt-Black.woff2') format('woff2'),
+        url('../fonts/TextaAlt-Black.woff') format('woff'),
+        url('../fonts/TextaAlt-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('../fonts/TextaAlt-MediumIt.eot');
+    src: local('Texta Alt Medium It'), local('TextaAlt-MediumIt'),
+        url('../fonts/TextaAlt-MediumIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TextaAlt-MediumIt.woff2') format('woff2'),
+        url('../fonts/TextaAlt-MediumIt.woff') format('woff'),
+        url('../fonts/TextaAlt-MediumIt.ttf') format('truetype');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('../fonts/TextaAlt-Regular.eot');
+    src: local('Texta Alt'), local('TextaAlt-Regular'),
+        url('../fonts/TextaAlt-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TextaAlt-Regular.woff2') format('woff2'),
+        url('../fonts/TextaAlt-Regular.woff') format('woff'),
+        url('../fonts/TextaAlt-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('../fonts/Texta-Medium.eot');
+    src: local('Texta Medium'), local('Texta-Medium'),
+        url('../fonts/Texta-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Texta-Medium.woff2') format('woff2'),
+        url('../fonts/Texta-Medium.woff') format('woff'),
+        url('../fonts/Texta-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('../fonts/TextaAlt-Light.eot');
+    src: local('Texta Alt Light'), local('TextaAlt-Light'),
+        url('../fonts/TextaAlt-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TextaAlt-Light.woff2') format('woff2'),
+        url('../fonts/TextaAlt-Light.woff') format('woff'),
+        url('../fonts/TextaAlt-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('../fonts/TextaAlt-BlackIt.eot');
+    src: local('Texta Alt Black It'), local('TextaAlt-BlackIt'),
+        url('../fonts/TextaAlt-BlackIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TextaAlt-BlackIt.woff2') format('woff2'),
+        url('../fonts/TextaAlt-BlackIt.woff') format('woff'),
+        url('../fonts/TextaAlt-BlackIt.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta Alt';
+    src: url('../fonts/TextaAlt-BoldIt.eot');
+    src: local('Texta Alt Bold It'), local('TextaAlt-BoldIt'),
+        url('../fonts/TextaAlt-BoldIt.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/TextaAlt-BoldIt.woff2') format('woff2'),
+        url('../fonts/TextaAlt-BoldIt.woff') format('woff'),
+        url('../fonts/TextaAlt-BoldIt.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Texta';
+    src: url('../fonts/Texta-Black.eot');
+    src: local('Texta Black'), local('Texta-Black'),
+        url('../fonts/Texta-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Texta-Black.woff2') format('woff2'),
+        url('../fonts/Texta-Black.woff') format('woff'),
+        url('../fonts/Texta-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}

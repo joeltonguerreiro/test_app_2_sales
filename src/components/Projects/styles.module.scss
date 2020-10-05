@@ -23,19 +23,23 @@
     border-color: $secondaryColor;
     color: $secondaryColor;
 
-    input {
-        width: clamp(200px, 55vw, 600px);
-        height: 2rem;
-        text-indent: 50px;
-    }
+    .searchInputGroup {
+        position: relative;
 
-    .iconSearch {
-        font-size: 18px;
-        height: auto;
+        input {
+            width: clamp(200px, 55vw, 600px);
+            height: 2rem;
+            text-indent: 35px;
+        }
 
-        position: absolute;
-        left: 11vw;
-    }
+        .iconSearch {
+            font-size: 18px;
+            height: auto;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+    }    
 }
 
 .iconSearch {
@@ -89,6 +93,7 @@
     color: white;
     font-size: 0.8rem;
     font-weight: 600;
+    padding: 5px;
     z-index: 2;
 }
 
@@ -107,6 +112,7 @@
 .projectItemLink {
     width: 100%;
     height: 100%;
+    text-decoration: none;
 }
 
 .projectViewHeaderImage {
@@ -126,9 +132,5 @@
     width: 100%;
     height: 100%;
     opacity: 0.20;
-}
-
-.projectViewTitle {
-    height: 60px;
-    color: $primaryColor;
+    border-radius: 5px;
 }

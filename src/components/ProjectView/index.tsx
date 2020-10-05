@@ -1,12 +1,19 @@
 import React, { useEffect, useState } from "react";
 import { NavLink } from "react-router-dom";
-import styles from "./styles.module.scss";
 
 import { useSelector } from "react-redux";
 import FooterMenu from "../FooterMenu";
 import Header from "../Header";
 
-import { StyledHeadProjectView } from "./styles";
+import {
+  StyledProjectViewBanner,
+  StyledProjectViewTitle,
+  StyledWrapper,
+  StyledActionFiles,
+} from "./styles";
+import { FaArrowLeft } from "react-icons/fa";
+
+import { IconTimeline, IconFolder } from "./icons";
 
 const ProjectView = (props: any) => {
   type ProjectProp = {
@@ -49,15 +56,27 @@ const ProjectView = (props: any) => {
   return (
     <>
       <Header />
-      <div className={styles.wrapper}>
-        <div className={styles.projectViewTitle}>
-          <NavLink to="/">
-            <span>{"<--  "}</span>
-            {selectedProject.name}
+      <StyledWrapper>
+        <StyledProjectViewTitle>
+          <NavLink to="/" className="project-title">
+            <FaArrowLeft /> &nbsp; {selectedProject.name}
           </NavLink>
-        </div>
-        <StyledHeadProjectView bgImage={selectedProject.image || ""} />
-      </div>
+          <NavLink className="edit-project" to="/edit-project">
+            EDITAR PROJETO
+          </NavLink>
+        </StyledProjectViewTitle>
+        <StyledProjectViewBanner bgImage={selectedProject.image || ""} />
+        <StyledActionFiles>
+          <div className="icon-group active">
+            {" "}
+            <IconTimeline /> Linha do tempo
+          </div>
+          <div className="icon-group">
+            {" "}
+            <IconFolder /> Pastas
+          </div>
+        </StyledActionFiles>
+      </StyledWrapper>
       <FooterMenu />
     </>
   );

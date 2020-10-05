@@ -7,26 +7,14 @@ import styles from "./styles.module.scss";
 import logo from "../../logo_grey.png";
 
 import Toast from "./toast";
-import { useDispatch, useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
 import { SIGN_IN } from "../../constants/actionTypes";
+import InputAsText from "../InputAsText";
 
 const Login = () => {
   const { handleSubmit, register, errors } = useForm();
 
   const dispatch = useDispatch();
-
-
-  type AuthState = {
-    isAuthenticated: Boolean;
-  };
-
-  type RootState = {
-    auth: AuthState;
-  };
-
-  const isAuthenticated = useSelector(
-    (state: RootState) => state.auth.isAuthenticated
-  );
 
   type formValues = {
     login: string;
@@ -43,32 +31,42 @@ const Login = () => {
     window.location.href = "/";
   };
 
+  console.log(typeof register);
+
   return (
     <div className={styles.wrapper}>
       {errors.login && <Toast message={errors.login.message} />}
+      {!errors.login && errors.password && <Toast message={errors.password.message} />}
 
       <img src={logo} alt="Logo" className={styles.logo} />
       <div className={styles.textLogin}>Faça login para começar</div>
       <form className={styles.form} onSubmit={handleSubmit(onSubmit)}>
-        <InputMask mask={"99 9 9999 9999"}>
-          {() => (
-            <input
-              className={errors.login ? styles.errorLogin : ""}
-              name="login"
-              placeholder="E-mail ou telefone"
-              ref={register({
-                required: "Número de telefone obrigatório. Preencha por favor.",
-              })}
-            />
-          )}
-        </InputMask>
+        <div className={styles.inputGroup}>
+          <label className={errors.login ? styles.errorLogin : ""}>
+            Telefone
+          </label>
+          <InputMask mask={"99 9 9999 9999"}>
+            {() => (
+              <input
+                className={errors.login ? styles.errorLogin : ""}
+                name="login"
+                placeholder="Telefone"
+                ref={register({
+                  required:
+                    "Número de telefone obrigatório. Preencha por favor.",
+                })}
+              />
+            )}
+          </InputMask>
+        </div>
         <input
           className={errors.password ? styles.errorLogin : ""}
           name="password"
           type="password"
           placeholder="Senha"
           ref={register({
-            required: "Required",
+            required:
+              "Número de telefone ou senha inválidos. Por favor, tente novamente",
           })}
         />
         <div className={styles.forgetPassword}>ESQUECEU A SENHA?</div>

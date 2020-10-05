@@ -10,10 +10,9 @@ type Props = {
 }
 
 const App: React.FC<Props> = (props) => {
-  const [showSplash, setShowSplash] = useState(false);
+  const [showSplash, setShowSplash] = useState(true);
 
   useEffect(() => {
-    setShowSplash(true);
     setTimeout(() => {
       setShowSplash(false);
     }, 1000);

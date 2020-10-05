@@ -8,22 +8,22 @@ import image6 from "./images/image6.png";
 let data = [
     {
         id: 1,
-        name: 'Cooporativo I',
+        name: 'Coorporativo I',
         image: image1
     },
     {
         id: 2,
-        name: 'Cooporativo II',
+        name: 'Coorporativo II',
         image: image2
     },
     {
         id: 3,
-        name: 'Cooporativo III',
+        name: 'Coorporativo III',
         image: image3
     },
     {
         id: 4,
-        name: 'Cooporativo IV',
+        name: 'Coorporativo IV',
         image: image4
     },
     {

@@ -2,18 +2,14 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
-
 import store, { persistor } from "./stores";
 import "./styles/index.scss";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
-import SplashScreen from "./components/SplashScreen";
-
-
 ReactDOM.render(
   <Provider store={store}>
-    <PersistGate loading={<SplashScreen />} persistor={persistor}>
+    <PersistGate loading={""} persistor={persistor}>
       <App />
     </PersistGate>
   </Provider>,

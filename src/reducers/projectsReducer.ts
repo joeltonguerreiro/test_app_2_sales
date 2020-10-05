@@ -11,14 +11,16 @@ type ProjectProp = {
     image?: string
 }
 
-type iProjectsState = {
+export type ProjectsType = {
     listProjects: Array<ProjectProp>,
-    filteredProjects: Array<ProjectProp>
+    filteredProjects: Array<ProjectProp>,
+    textFilter: string
 }
 
-const initialState: iProjectsState = {
+const initialState: ProjectsType = {
 	listProjects: data,
-    filteredProjects: []
+    filteredProjects: [],
+    textFilter: ""
 };
 
 type actionType = {
@@ -28,14 +30,15 @@ type actionType = {
     }
 };
 
-const projectReducer: Reducer<iProjectsState, actionType> = (state = initialState, action: actionType) => {
+const projectReducer: Reducer<ProjectsType, actionType> = (state = initialState, action: actionType) => {
 	switch (action.type) {
 		case FILTER:
-            let filtered = initialState.listProjects.filter(item => {
-                console.log('item', item.name);
-                console.log('text', action.payload.text);
+            Object.assign({}, state, {
+				textFilter: action.payload.text
+            });
 
-                return item.name.includes(action.payload.text);
+            let filtered = initialState.listProjects.filter(item => {
+                return item.name.toLowerCase().includes(action.payload.text.toLowerCase());
             });
 
 			return Object.assign({}, state, {

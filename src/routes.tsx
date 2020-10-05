@@ -6,7 +6,7 @@ import Login from "./components/Login";
 import Home from "./components/Home";
 import Chat from "./components/Chat";
 import Settings from "./components/Settings";
-import ProjectView from "./components/Projects/view";
+import ProjectView from "./components/ProjectView";
 
 type RouteProps = {
   exact?: boolean;

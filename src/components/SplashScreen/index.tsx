@@ -2,12 +2,14 @@ import React from "react";
 
 import styles from "./styles.module.scss";
 
+import {StyledWrapper} from "./styles";
+
 import logo from "../../logo.png"
 
 const SplashScreen: React.FC = () => {
-    return <div className={styles.wrapper}>
+    return <StyledWrapper>
         <img src={logo} alt={"logo"} className={styles.logo}/>
-    </div>
+    </StyledWrapper>
 }
 
 export default SplashScreen;

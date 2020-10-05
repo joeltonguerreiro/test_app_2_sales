@@ -1,14 +1,22 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import {useSelector, useDispatch} from "react-redux";
 
-import { StyledProjectItem } from "./styles";
+import {FILTER} from "../../constants/actionTypes";
 
 import styles from "./styles.module.scss";
+import { StyledGridProjects, StyledProjectItem } from "./styles";
 
 import Search from "./search";
-import { useSelector } from "react-redux";
 
 const Projects = () => {
+
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch({ type: FILTER, payload: { text: "" } });
+  }, [dispatch])
+
   type ProjectProp = {
     id: number;
     name: string;
@@ -17,23 +25,24 @@ const Projects = () => {
 
   type RootState = {
     projects: {
-      projects: Array<ProjectProp>;
+      listProjects: Array<ProjectProp>;
       filteredProjects: Array<ProjectProp>;
+      textFilter: string
     };
   };
 
   const projects = useSelector((state: RootState) => state.projects);
 
-  let listProjects = projects.filteredProjects || projects.projects;
+  let listProjects = projects.listProjects;
 
-  // const listImages = [image1, image2, image3, image4, image5, image6];
-
-  console.log('listProjects', listProjects);
+  if (projects.textFilter !== '') {
+    listProjects = projects.filteredProjects;
+  }
 
   return (
     <div className={styles.wrapper}>
       <Search />
-      <div className={styles.gridProjects}>
+      <StyledGridProjects>
         {listProjects &&
           listProjects.map((item: ProjectProp, key) => {
             return (
@@ -42,14 +51,14 @@ const Projects = () => {
                 className={styles.projectItemLink}
                 key={key}
               >
-                <StyledProjectItem bgImage={item.image || ''}>
+                <StyledProjectItem bgImage={item.image || ""}>
                   <div className={styles.overlay}></div>
                   <div className={styles.projectTitle}>{item.name}</div>
                 </StyledProjectItem>
               </Link>
             );
           })}
-      </div>
+      </StyledGridProjects>
     </div>
   );
 };
