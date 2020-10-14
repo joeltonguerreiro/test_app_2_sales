@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { useForm } from "react-hook-form";
 
 import InputMask from "react-input-mask";
@@ -9,7 +9,6 @@ import logo from "../../logo_grey.png";
 import Toast from "./toast";
 import { useDispatch } from "react-redux";
 import { SIGN_IN } from "../../constants/actionTypes";
-import InputAsText from "../InputAsText";
 
 const Login = () => {
   const { handleSubmit, register, errors } = useForm();
